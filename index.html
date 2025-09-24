@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/index-Ct6RKiK7.js"></script>
+  <script type="module" crossorigin src="./assets/index-CKpP2nzZ.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/vendor-4QxL1Nz2.js">
-  <link rel="stylesheet" crossorigin href="./assets/index-B-t0SCk2.css">
+  <link rel="stylesheet" crossorigin href="./assets/index-D2WbKYrJ.css">
 </head>
 <body>
     <div id="app-container">
@@ -39,8 +39,8 @@
                     <i class="fas fa-coins"></i>
                 </div>
                 <div class="game-card-info">
-                    <h2 class="game-card-title">Coin Flip</h2>
-                    <p class="game-card-description">50/50 chance to double up.</p>
+                    <h2 class="game-card-title">Подбрось монету</h2>
+                    <p class="game-card-description">50/50 шанс удвоить ставку.</p>
                 </div>
             </div>
             <div class="game-card" data-game="crash">
@@ -48,8 +48,8 @@
                     <i class="fas fa-rocket"></i>
                 </div>
                 <div class="game-card-info">
-                    <h2 class="game-card-title">Crash</h2>
-                    <p class="game-card-description">Cash out before the crash!</p>
+                    <h2 class="game-card-title">Краш</h2>
+                    <p class="game-card-description">Выводи до взрыва — не опаздывай!</p>
                 </div>
             </div>
         </main>
@@ -98,31 +98,31 @@
                 <h3>TON Wallet</h3>
                 <div class="ton-connect">
                     <div id="ton-connect-button"></div>
-                    <div class="ton-address" id="ton-address">Not connected</div>
+                    <div class="ton-address" id="ton-address">Не подключено</div>
                 </div>
             </div>
 
-            <button id="exchange-btn" class="btn btn-primary">Exchange Currencies</button>
+            <button id="exchange-btn" class="btn btn-primary">Обмен валют</button>
 
             <div class="wallet-actions">
-                <h3 class="section-title">Earn & Buy</h3>
-                <button id="ad-reward-btn" class="btn btn-secondary"><i class="fas fa-video"></i> Watch Ad for Reward</button>
-                <button id="buy-ton-btn" class="btn btn-secondary"><i class="fas fa-wallet"></i> Buy with TON</button>
+                <h3 class="section-title">Заработок и покупка</h3>
+                <button id="ad-reward-btn" class="btn btn-secondary"><i class="fas fa-video"></i> Посмотреть рекламу</button>
+                <button id="buy-ton-btn" class="btn btn-secondary"><i class="fas fa-wallet"></i> Купить за TON</button>
             </div>
         </main>
         <footer class="app-footer">
             <nav class="bottom-nav">
                 <a href="#" class="nav-item" data-view="game">
                     <i class="fas fa-gamepad"></i>
-                    <span class="nav-text">Games</span>
+                    <span class="nav-text">Игры</span>
                 </a>
                 <a href="#" class="nav-item active" data-view="home">
                     <i class="fas fa-home"></i>
-                    <span class="nav-text">Home</span>
+                    <span class="nav-text">Главная</span>
                 </a>
                 <a href="#" class="nav-item" data-view="wallet">
                     <i class="fas fa-wallet"></i>
-                    <span class="nav-text">Wallet</span>
+                    <span class="nav-text">Кошелёк</span>
                 </a>
             </nav>
         </footer>
@@ -133,38 +133,38 @@
     <div id="settings-modal" class="modal-overlay" style="display: none;">
         <div class="modal-content">
             <header class="modal-header">
-                <h2 class="modal-title">Setting</h2>
+                <h2 class="modal-title">Настройки</h2>
                 <button id="close-settings-btn" class="close-btn">&times;</button>
             </header>
             <div class="modal-body">
-                <h3 class="section-title">General</h3>
+                <h3 class="section-title">Общее</h3>
                 <div class="setting-item">
-                    <label for="sound-toggle">Sound</label>
+                    <label for="sound-toggle">Звук</label>
                     <label class="switch">
                         <input type="checkbox" id="sound-toggle" checked>
                         <span class="slider round"></span>
                     </label>
                 </div>
                 <div class="setting-item">
-                    <label for="bg-animation-toggle">BackGround Animation</label>
+                    <label for="bg-animation-toggle">Анимация фона</label>
                     <label class="switch">
                         <input type="checkbox" id="bg-animation-toggle" checked>
                         <span class="slider round"></span>
                     </label>
                 </div>
                 <div class="setting-item">
-                    <label for="sound-volume">Sound</label>
+                    <label for="sound-volume">Громкость</label>
                     <div class="volume-control">
                         <i class="fas fa-volume-down"></i>
                         <input type="range" id="sound-volume" min="0" max="100" value="45">
                         <i class="fas fa-volume-up"></i>
                     </div>
                 </div>
-                <h3 class="section-title">Wallet</h3>
+                <h3 class="section-title">Кошелёк</h3>
                 <div class="setting-item">
-                    <span>Wallet</span>
+                    <span>Статус</span>
                     <!-- Placeholder for wallet info -->
-                    <span class="wallet-placeholder">Connected</span>
+                    <span class="wallet-placeholder">Не подключено</span>
                 </div>
             </div>
         </div>
@@ -174,12 +174,12 @@
     <div id="exchange-modal" class="modal-overlay" style="display: none;">
         <div class="modal-content">
             <header class="modal-header">
-                <h2 class="modal-title">Currency Exchange</h2>
+                <h2 class="modal-title">Обмен валют</h2>
                 <button id="close-exchange-btn" class="close-btn">&times;</button>
             </header>
             <div class="modal-body">
                 <div class="exchange-group">
-                    <label for="from-currency">From</label>
+                    <label for="from-currency">Отдаю</label>
                     <div class="input-group">
                         <input type="number" id="from-amount" placeholder="0.00" step="0.01" min="0" inputmode="decimal">
                         <select id="from-currency">
@@ -192,7 +192,7 @@
                     <p>Exchange Rate: 1 USD = 200 GCOIN</p>
                 </div>
                 <div class="exchange-group">
-                    <label for="to-currency">To</label>
+                    <label for="to-currency">Получаю</label>
                     <div class="input-group">
                         <input type="number" id="to-amount" placeholder="0.00" step="0.01" readonly>
                         <select id="to-currency" disabled>
@@ -201,7 +201,7 @@
                         </select>
                     </div>
                 </div>
-                <button id="confirm-exchange-btn" class="btn btn-primary">Confirm Exchange</button>
+                <button id="confirm-exchange-btn" class="btn btn-primary">Подтвердить обмен</button>
             </div>
         </div>
     </div>
