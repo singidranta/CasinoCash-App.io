@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/index-60BAAPTf.js"></script>
+  <script type="module" crossorigin src="./assets/index-Qqgw7vxs.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/vendor-4QxL1Nz2.js">
-  <link rel="stylesheet" crossorigin href="./assets/index-BHWPZ_vu.css">
+  <link rel="stylesheet" crossorigin href="./assets/index-BDMA6RJl.css">
 </head>
 <body>
     <div id="app-container">
@@ -72,12 +72,35 @@
                         <span id="game-multiplier-info" style="display:none;">Множитель: x1.00</span>
                     </div>
                 </header>
-                <section class="game-config" id="game-config"></section>
-                <section class="game-stage" id="game-stage">
-                    <div class="game-placeholder">Выберите игру, чтобы увидеть арену.</div>
+                <section class="game-layout">
+                    <div class="game-column column-settings">
+                        <div class="game-card-shell">
+                            <div class="card-header">
+                                <h3 class="card-title">Настройки</h3>
+                            </div>
+                            <div class="card-body" id="game-config"></div>
+                        </div>
+                        <div class="game-card-shell status-shell">
+                            <div class="card-header">
+                                <h3 class="card-title">Статус раунда</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="game-status" id="game-status">Выберите игру, чтобы начать раунд.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-column column-stage">
+                        <div class="game-stage-card">
+                            <div class="game-stage-surface" id="game-stage"></div>
+                        </div>
+                        <div class="game-card-shell controls-shell">
+                            <div class="card-header">
+                                <h3 class="card-title">Действия</h3>
+                            </div>
+                            <div class="card-body game-controls" id="game-controls"></div>
+                        </div>
+                    </div>
                 </section>
-                <section class="game-controls" id="game-controls"></section>
-                <p class="game-status" id="game-status"></p>
             </div>
         </main>
 
