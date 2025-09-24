@@ -1,7 +1,7 @@
 {
   "url": "https://singidranta.github.io/CasinoCash-App.io/",
   "name": "CasinoCash",
-  "iconUrl": "https://singidranta.github.io/CasinoCash-App.io/assets/icons/tonconnect-icon.svg",
+  "iconUrl": "https://raw.githubusercontent.com/ton-connect/sdk/main/assets/tonconnect-logo.png",
   "termsOfUseUrl": "https://singidranta.github.io/CasinoCash-App.io/terms",
   "privacyPolicyUrl": "https://singidranta.github.io/CasinoCash-App.io/privacy"
 }
