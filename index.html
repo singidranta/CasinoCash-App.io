@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Gcoin Casino</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/index-xKQkSfHK.js"></script>
+  <script type="module" crossorigin src="./assets/index-DHv3-8_R.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/vendor-4QxL1Nz2.js">
-  <link rel="stylesheet" crossorigin href="./assets/index-D94zATnv.css">
+  <link rel="stylesheet" crossorigin href="./assets/index-BzVZzbkQ.css">
 </head>
 <body>
     <div id="app-container">
         <header class="app-header">
             <div class="balance-display">
-                <span class="balance-amount" id="gcoin-balance">1,234.56</span>
+                <span class="balance-amount" id="gcoin-balance">0.00</span>
                 <span class="balance-currency">gcoin</span>
             </div>
             <button class="settings-btn">
@@ -64,73 +61,13 @@
                         </button>
                         <div class="game-heading">
                             <h2 id="active-game-title">Выберите игру</h2>
-                            <p id="active-game-description">Откройте игру из каталога, чтобы начать.</p>
                         </div>
                     </div>
                     <div class="game-stats">
                         <span id="game-stake-info">Ставка: —</span>
                         <span id="game-multiplier-info" style="display:none;">Множитель: x1.00</span>
                     </div>
-                </header>
-                <section class="game-layout">
-                    <div class="game-column column-settings">
-                        <div class="game-card-shell">
-                            <div class="card-header">
-                                <h3 class="card-title">Настройки</h3>
-                            </div>
-                            <div class="card-body" id="game-config"></div>
-                        </div>
-                        <div class="game-card-shell status-shell">
-                            <div class="card-header">
-                                <h3 class="card-title">Статус раунда</h3>
-                            </div>
-                            <div class="card-body">
-                                <p class="game-status" id="game-status">Выберите игру, чтобы начать раунд.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="game-column column-stage">
-                        <div class="game-stage-card">
-                            <div class="game-stage-surface" id="game-stage"></div>
-                        </div>
-                        <div class="game-card-shell controls-shell">
-                            <div class="card-header">
-                                <h3 class="card-title">Действия</h3>
-                            </div>
-                            <div class="card-body game-controls" id="game-controls"></div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
-
-        <main id="wallet-view" class="app-main" style="display: none;">
-            <div class="wallet-balance-card">
-                <h3>Real Balance</h3>
-                <p id="real-balance-amount">$5.00</p>
-            </div>
-            <div class="wallet-balance-card">
-                <h3>Game Currency</h3>
-                <div class="balance-display-inline">
-                    <p id="game-balance-amount">1,000</p>
-                    <span class="balance-currency-small">gcoin</span>
                 </div>
-            </div>
-
-            <div class="wallet-balance-card ton-card">
-                <h3>TON Wallet</h3>
-                <div class="ton-connect">
-                    <div id="ton-connect-button"></div>
-                    <div class="ton-address" id="ton-address">Не подключено</div>
-                </div>
-            </div>
-
-            <button id="exchange-btn" class="btn btn-primary">Обмен валют</button>
-
-            <div class="wallet-actions">
-                <h3 class="section-title">Заработок и покупка</h3>
-                <button id="ad-reward-btn" class="btn btn-secondary"><i class="fas fa-video"></i> Посмотреть рекламу</button>
-                <button id="buy-ton-btn" class="btn btn-secondary"><i class="fas fa-wallet"></i> Купить за TON</button>
             </div>
         </main>
         <footer class="app-footer">
@@ -149,7 +86,6 @@
                 </a>
             </nav>
         </footer>
-
     </div>
 
     <!-- Settings Modal -->
@@ -186,12 +122,11 @@
                 <h3 class="section-title">Кошелёк</h3>
                 <div class="setting-item">
                     <span>Статус</span>
-                    <!-- Placeholder for wallet info -->
                     <span class="wallet-placeholder">Не подключено</span>
                 </div>
                 <div class="setting-item">
                     <label for="ton-recipient-input">Адрес для получения TON</label>
-                    <input id="ton-recipient-input" type="text" placeholder="EQC..." style="width: 60%; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid rgba(125,120,255,0.28); border-radius: 10px; padding: 10px;">
+                    <input id="ton-recipient-input" class="ton-recipient-input" type="text" placeholder="EQC...">
                 </div>
             </div>
         </div>
@@ -228,11 +163,13 @@
                         </select>
                     </div>
                 </div>
-                <button id="confirm-exchange-btn" class="btn btn-primary">Подтвердить обмен</button>
+
+                <div class="modal-actions">
+                    <button id="confirm-exchange-btn" class="btn btn-primary">Подтвердить обмен</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- App bootstrap as ES module -->
 </body>
 </html>
